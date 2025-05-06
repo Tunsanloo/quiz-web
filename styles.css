@@ -1,0 +1,131 @@
+/* Estilos base para dispositivos móviles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    font-size: 20px;
+    margin: 20px 10px;
+}
+
+/* Estilo para el contenedor del encabezado */
+.header-container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el logo y el texto */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    gap: 10px; /* Espaciado entre el logo y el texto */
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+/* estilo para el parrafo del header */
+.header-parrafo {
+    font-size: 20px; 
+    font-weight: bold; /* Texto en negrita */
+    text-align: center; /* Centra el texto */
+    margin-top: 10; /* Elimina el margen por defecto */
+}
+
+
+/* Estilo para el logo */
+.logo {
+    width: 60px;
+    height: auto;
+}
+
+/* Contenedor de los botones */
+.boton-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px;
+}
+
+/* Botón principal */
+.boton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #007bff; 
+    border: 2px solid #007BFF; /* Borde más grueso y elegante */
+    border-radius: 16px; /* Bordes más redondeados */
+    padding: 0;
+    width: 120px;
+    height: 150px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    position: relative;
+}
+
+.boton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    border-color: #0056b3; /* Cambia el color del borde al pasar el mouse */
+}
+
+/* Imagen dentro del botón */
+.boton-imagen {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: auto;
+}
+
+/* Parte inferior del botón */
+.boton-inferior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007BFF; /* Fondo azul */
+    color: white; /* Texto blanco */
+    width: 100%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+/* Texto del botón */
+.boton-texto {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    flex: 1; /* Ocupa el espacio restante */
+    margin-right: 10px; /* Espaciado entre el texto y el icono */
+    color: white; /* Texto blanco */
+}
+
+/* Icono de flecha */
+.boton-icono {
+    font-size: 16px;
+    text-align: right; /* Alinea el icono a la derecha */
+}
+
+/* Estilos para pantallas más grandes */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 28px; /* Aumenta el tamaño del texto en pantallas grandes */
+    }
+
+    .button-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .button {
+        width: auto; /* Botones se ajustan a su contenido */
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+}
