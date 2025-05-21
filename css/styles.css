@@ -5,7 +5,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 1.25rem;
   color: #333;
-   background-image: url('../assets/backgroundboda.png'); /* Reemplaza con la URL o ruta de tu imagen */
+  background-image: url('../assets/backgroundboda.png'); /* Reemplaza con la URL o ruta de tu imagen */
   background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
   background-position: center;
   background-repeat: no-repeat;
@@ -140,7 +140,7 @@ button:hover {
   }
 
   h2 {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   p {
@@ -164,6 +164,10 @@ button:hover {
 
   ol {
     width: 90%; /* Evita que se vea demasiado amplio en móviles */
+  }
+
+  body {
+    font-size: 14px; /* Reduce ligeramente el tamaño del texto */
   }
 }
 
